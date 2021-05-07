@@ -5,6 +5,14 @@ const moviesLoaded=(newMovie)=>{
     }
 }
 
+const moviesError=(error)=>{
+    return{
+        type: 'MOVIES_ERROR',
+        payload: error
+    }
+}
+
 export{
-    moviesLoaded
+    moviesLoaded,
+    moviesError
 }
