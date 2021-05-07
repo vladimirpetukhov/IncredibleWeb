@@ -1,6 +1,9 @@
 import React from 'react'
+import './app.css'
+import { withIwebService} from '../high-ordered-components'
 
-const App=()=>{
+const App=({iwebService})=>{
+    console.log(iwebService.get())
     return(
         <div>
             App
@@ -8,4 +11,4 @@ const App=()=>{
     )
 }
 
-export default App
+export default withIwebService()(App)

@@ -1,5 +1,5 @@
 import React from "react"
-import IWebServiceConsumer from "../iweb-service-context"
+import {IWebServiceConsumer} from "../iweb-service-context"
 
 const withIwebService = () => (Wrapped) => {
   return (props) => (
