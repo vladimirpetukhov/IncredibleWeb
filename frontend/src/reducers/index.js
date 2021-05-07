@@ -1,19 +1,25 @@
 const initialState={
-    books:[]
+    movies:[{
+        id:1,
+        name:'Production-Ready',
+        author:'John'
+    },
+    {
+       id:2,
+       name:'Release-IT',
+       author:'Michael T. N'
+   }]
 }
 
 const reducer=(state=initialState,action)=>{
     switch (action.type) {
-        case 'BOOKS_LOADED':
+        case 'MOVIES_LOADED':
             return{
-                books:action.payload
-            }
-            break
-    
+                movies:action.payload
+            }    
         default:
             return state
     }
-    return state
 }
 
 export default reducer

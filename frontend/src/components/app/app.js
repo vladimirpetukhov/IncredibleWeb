@@ -1,14 +1,16 @@
 import React from 'react'
-import './app.css'
-import { withIwebService} from '../high-ordered-components'
+import { Route, Switch} from 'react-router-dom'
+import { HomePage,MoviesPage} from '../pages'
 
-const App=({iwebService})=>{
-    console.log(iwebService.get())
+import './app.css'
+
+const App=()=>{
     return(
-        <div>
-            App
-        </div>
+        <Switch>
+            <Route path="/" component={ HomePage} exact/>
+            <Route path="/movies" component={MoviesPage} />
+        </Switch>
     )
 }
 
-export default withIwebService()(App)
+export default App
