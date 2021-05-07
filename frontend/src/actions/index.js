@@ -1,10 +1,10 @@
-const booksLoaded=(newBooks)=>{
+const moviesLoaded=(newMovie)=>{
     return{
-        type: 'BOOKS_LOADED',
-        payload:  newBooks
+        type: 'MOVIES_LOADED',
+        payload:  newMovie
     }
 }
 
 export{
-    booksLoaded
+    moviesLoaded
 }
