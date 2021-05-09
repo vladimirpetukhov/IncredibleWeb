@@ -17,7 +17,8 @@ class MovieList extends Component {
     iwebService
       .getMovies()
       .then((data) => {
-        moviesLoaded(data);
+        
+        moviesLoaded(data.data.results.sort((a,b) => (a.popularity > b.popularity) ? 1 : ((b.popularity > a.popularity) ? -1 : 0)).slice(0,8));
       })
       .catch((err) => {
         moviesError(err);
