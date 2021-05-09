@@ -216,11 +216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb.ApiClient\\IncredibleWeb.ApiClient.csproj",
+      "projectUniqueName": "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb.ApiClient\\IncredibleWeb.ApiClient.csproj",
       "projectName": "IncredibleWeb.ApiClient",
-      "projectPath": "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb.ApiClient\\IncredibleWeb.ApiClient.csproj",
+      "projectPath": "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb.ApiClient\\IncredibleWeb.ApiClient.csproj",
       "packagesPath": "C:\\Users\\Vladimir\\.nuget\\packages\\",
-      "outputPath": "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb.ApiClient\\obj\\",
+      "outputPath": "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb.ApiClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

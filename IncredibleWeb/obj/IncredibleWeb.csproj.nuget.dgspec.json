@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb\\IncredibleWeb.csproj": {}
+    "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb\\IncredibleWeb.csproj": {}
   },
   "projects": {
-    "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb\\IncredibleWeb.csproj": {
+    "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb\\IncredibleWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb\\IncredibleWeb.csproj",
+        "projectUniqueName": "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb\\IncredibleWeb.csproj",
         "projectName": "IncredibleWeb",
-        "projectPath": "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb\\IncredibleWeb.csproj",
+        "projectPath": "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb\\IncredibleWeb.csproj",
         "packagesPath": "C:\\Users\\Vladimir\\.nuget\\packages\\",
-        "outputPath": "F:\\Code\\DOTNET\\IncredibleWeb\\IncredibleWeb\\obj\\",
+        "outputPath": "f:\\Code\\SANDBOX\\IncredibleWeb.git\\IncredibleWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
