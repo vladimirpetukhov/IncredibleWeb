@@ -1,8 +1,7 @@
-import {FETCH_POPULAR, FETCH_UPCOMING, FETCH_TOP_RATED, FETCH_KIDS_POPULAR, FETCH_NOW_PLAYING, FETCH_SEARCH} from '../actions/types'
+import {FETCH_POPULAR, FETCH_UPCOMING,FETCH_MOVIE, FETCH_TOP_RATED, FETCH_KIDS_POPULAR, FETCH_NOW_PLAYING, FETCH_SEARCH} from '../actions/types'
 
 const initialState = {
-    searchedMovies:[],
-    searchedTvShows:[],
+    searchedMovies:[]
 }
 
 export default function(state=initialState, action){
@@ -28,6 +27,11 @@ export default function(state=initialState, action){
             searchedMovies:action.payload
         };
         case FETCH_NOW_PLAYING:
+        return{
+            ...state,
+            searchedMovies:action.payload
+        };
+        case FETCH_MOVIE:
         return{
             ...state,
             searchedMovies:action.payload

@@ -13,17 +13,17 @@ class MovieInfo extends Component{
     componentWillMount(){
         const {movieInfo} = this.state
         let movieId = sessionStorage.getItem('movieId');
+        
         let page = sessionStorage.getItem('Page');
          let url
-         url = `${api}/${page}/${movieId}?api_key=${apiKey}&append_to_response=credits`
+         url = `${api}/movie/${movieId}?api_key=${apiKey}`
         
          fetch(url)
          .then((response) => {
              response.json().then((data) => {
-                 console.log(data)
              let info
              if (response.status === 200) {
-                
+                console.log(data)
              info = {
                 tagline: data.tagline,
                 poster: data.poster_path,
@@ -141,8 +141,8 @@ class MovieInfo extends Component{
                     </div>
                     <div className="links">
                         <div className="li"><Link className="link" to="/">Movies</Link></div>
-                        <div className="li"><Link className="link" to="/TvShows" >Tv Shows</Link></div>
-                        <div className="li"><a className="link" href={homepage} target="_blank">View More Details</a></div>
+                        
+                        <div className="li"><a className="button" href={homepage} target="_blank">WATCH</a></div>
                     </div>
                     </div>
 

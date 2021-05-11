@@ -314,9 +314,6 @@ li a {
 .genre-container li:last-child{
   border-right:none;
 }
-.genre-container li:hover{
-  box-shadow: 0 0 4px white, 0 0 6px white;
-}
 
 .suggestion{
   margin-right:1em;
