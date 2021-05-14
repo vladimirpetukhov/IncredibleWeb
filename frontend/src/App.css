@@ -28,6 +28,7 @@
     text-transform: uppercase;
     font-weight:normal;
     font-size:1.6em;
+    margin-left: 5px;
     
 }
 h1 span{
@@ -47,11 +48,11 @@ h1 span{
   z-index: 3;
   width: 100%;
   position: fixed;
-  
+  background-color: #1fad42;
   height: 60px;
   display: flex;
   justify-content: center; 
-  box-shadow: 0 1px 6px 0 rgba(64,196,253,1);
+  box-shadow: 0 1px 6px 0 rgb(70, 253, 64);
 }
 
 .navigation {
@@ -152,7 +153,7 @@ li a {
   }
 
   .active{
-    background-color:rgb(52,52,52);
+    background-color:rgb(3 78 214 / 28%);
   }
 /* ============================ SUBHEADER SECTION ============================== */
 

@@ -13,6 +13,7 @@ const apiKey = "a9632aa4c0a084cd40a2f5f911739ec0";
 
 export const mostPopular = () => (dispatch) => {
   const url = `${api}/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+  console.log('popular')
   setOptions("mostPopular", "popular");
   fetch(url)
     .then((response) => response.json())
@@ -124,3 +125,6 @@ function setOptions(category, id) {
   localStorage.setItem("active", id);
   $(`#${id}`).addClass("active");
 }
+
+
+
