@@ -3,6 +3,7 @@ import React from "react";
 export const GenreMovie = (props) => {
 
   
+  
   return (
     <section className="subheader">
       <div className="genre-container">

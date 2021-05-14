@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import MovieContainer from "./MovieContainer";
 import Header from "./Header";
 import { GenreMovie } from "./GenreMovieContainer";
-import { FilterMovies} from "./FilterMovies";
 import $ from "jquery";
 import { connect } from "react-redux";
 import {
@@ -60,7 +59,7 @@ const Movies=(props)=> {
           nowPlaying={props.nowPlaying}
           setActive={setActive}
         />
-        <FilterMovies className=""/>
+        
         <MovieContainer
           movies={props.movies}
           setPage={setFetchMovies}

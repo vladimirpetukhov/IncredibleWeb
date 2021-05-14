@@ -124,3 +124,6 @@ function setOptions(category, id) {
   localStorage.setItem("active", id);
   $(`#${id}`).addClass("active");
 }
+
+
+
