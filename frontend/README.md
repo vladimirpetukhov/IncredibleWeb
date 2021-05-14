@@ -1,20 +1,20 @@
-# CoolMoviesBB React App
+# Incredible Web App
 
-CoolMoviesBB is a responsive React-Redux app that allows the user to search Movies and TvShows. This project is fetching data from The Movie Database https://www.themoviedb.org/.
+Incredible Web is a responsive React-Redux app that allows the user to search Movies and TvShows. This project is fetching data from The Movie Database https://www.themoviedb.org/.
 
 ## Preview
 
-You can check the live website [Here](https://msmatki.github.io/React-Redux-Movies/)
+You can check the live website [Here](https://)
 
 ## Screenshot
 
-![alt text](img/ScreenShot.png)
+![alt text]()
 
 ## How run on your local machine
 
 * To run this file, download the GitHub zip file or clone the repository.
 * Open the root folder of the repository in a terminal
-* Get started by intalling npm, please follow this tutorial - http://blog.npmjs.org/post/85484771375/how-to-install-npm
+* Get started by intalling npm, please follow this tutorial - 
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
@@ -29,7 +29,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Copyright and License
 
-Copyright 2018 By Bartol. Code released under the [MIT](https://github.com/MsMatki/React-Movies/blob/master/LICENSE) license.
+Copyright 20121 By Vladimir Petukhov. Code released under the [MIT](https://github.com) license.
 
 ## Technologies Used
 
