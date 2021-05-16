@@ -9,12 +9,11 @@ import {
 import $ from "jquery";
 
 const api = "https://api.themoviedb.org/3";
-const apiKey = "a9632aa4c0a084cd40a2f5f911739ec0";
+const apiKey = "8a992da4805004fef2ff91e12d0f1f8b";
 
 export const mostPopular = () => (dispatch) => {
   const url = `${api}/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
-  console.log('popular')
-  setOptions("mostPopular", "popular");
+  
   fetch(url)
     .then((response) => response.json())
     .then((movies) => {
@@ -26,7 +25,7 @@ export const mostPopular = () => (dispatch) => {
 };
 
 export const upcoming = () => (dispatch) => {
-  setOptions("upcoming", "upcoming");
+
   const url = `${api}/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
   fetch(url)
     .then((response) => response.json())
@@ -39,8 +38,8 @@ export const upcoming = () => (dispatch) => {
 };
 
 export const topRated = () => (dispatch) => {
-  const url = `${api}/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
-  setOptions("topRated", "topRated");
+  const url = `${api}/movie/top_rated?api_key=${apiKey}&language=en-US&page=1$&sort_by=popularity.asc`;
+ 
   fetch(url)
     .then((response) => response.json())
     .then((movies) =>
@@ -52,8 +51,8 @@ export const topRated = () => (dispatch) => {
 };
 
 export const kidsPopular = () => (dispatch) => {
-  setOptions("kidsPopular", 'kids');
-  const url = `${api}/discover/movie?api_key=${apiKey}&certification_country=US&certification.lte=G&sort_by=popularity.desc`;
+  console.log('kids')
+  const url = `${api}/discover/movie?api_key=${apiKey}&certification_country=EU&certification.lte=G&sort_by=popularity.desc`;
   fetch(url)
     .then((response) => response.json())
     .then((movies) =>
@@ -66,7 +65,7 @@ export const kidsPopular = () => (dispatch) => {
 
 export const nowPlaying = () => (dispatch) => {
   const url = `${api}/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`;
-  setOptions("nowPlaying", "cinema");
+ 
   fetch(url)
     .then((response) => response.json())
     .then((movies) =>

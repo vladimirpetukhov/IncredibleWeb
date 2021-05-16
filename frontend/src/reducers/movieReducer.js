@@ -5,11 +5,12 @@ const initialState = {
 }
 
 export default function(state=initialState, action){
+    console.log(`________${action.type}_______`)
     switch(action.type){
         case FETCH_POPULAR:
         return{
             ...state,
-            searchedMovies:action.payload
+            searchedMovies:action.payload,
         };
         case FETCH_UPCOMING:
         return{
@@ -42,7 +43,17 @@ export default function(state=initialState, action){
             searchedMovies:action.payload,
           
         };
-        
+        case FETCH_SEARCH:
+        return{
+            ...state,
+            searchedMovies:action.payload,
+          
+        };case FETCH_SEARCH:
+        return{
+            ...state,
+            searchedMovies:action.payload,
+          
+        };
         default:
         return state;
     }
