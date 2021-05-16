@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import MovieContainer from "./MovieContainer";
-import Header from "./Header";
-import { GenreMovie } from "./GenreMovieContainer";
-import $ from "jquery";
+import MovieContainer from "../containers/MovieContainer";
+import Search from '../components/Search'
+import { GenreMovie } from "../components/genres/GenreMovie";
 import { connect } from "react-redux";
 import {
   mostPopular,
@@ -12,30 +11,36 @@ import {
   nowPlaying,
   searchMovies
 } from "../actions/movieActions";
+import {useParams, useLocation} from 'react-router-dom'
 
 const Movies=(props)=> {
 
   const [active,setActive]=useState('upcomming')
-
+  const {genre}=useParams()
+  
+  const location=useLocation();
   useEffect(()=>{
-    if (localStorage.getItem("category")) {
-      switch (localStorage.getItem("category")) {
-        case "mostPopular":
+    console.log(genre)
+    console.log(location)
+    console.log(props)
+    if (genre) {
+      switch (genre) {
+        case "upcomming":
           return props.mostPopular();
-        case "kidsPopular":
+        case "popular":
           return props.kidsPopular();
-        case "nowPlaying":
+        case "cinema":
           return props.nowPlaying();
         case "topRated":
           return props.topRated();
         default:
-          props.upcoming();
+          props.searchMovies(genre);
           break;
       }
     } else {
       props.upcoming();
     }
-  },[])
+  },[genre])
     //set upcoming movies as a default
     
   
@@ -50,13 +55,8 @@ const Movies=(props)=> {
 
     return (
       <div>
-        <Header searchData={props.searchMovies} />
+        <Search searchData={props.searchMovies} />
         <GenreMovie
-          mostPopular={props.mostPopular}
-          upcoming={props.upcoming}
-          topRated={props.topRated}
-          kidsPopular={props.kidsPopular}
-          nowPlaying={props.nowPlaying}
           setActive={setActive}
         />
         

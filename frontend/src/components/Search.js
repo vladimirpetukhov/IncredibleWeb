@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { DebounceInput } from "react-debounce-input";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { DebounceInput } from 'react-debounce-input';
+import {useHistory } from 'react-router-dom';
 
-const Header = (props) => {
-  const [sideBar, setSidebar] = useState("closed");
-
+const Search = (props) => {
+  const [sideBar, setSidebar] = useState('closed');
+  const history = useHistory();
   const openCloseMenu = () => {
-    let ul = document.querySelector(".topnav");
-    if (sideBar === "closed") {
-      ul.classList.add("response");
-      setSidebar("open");
+    let ul = document.querySelector('.topnav');
+    if (sideBar === 'closed') {
+      ul.classList.add('response');
+      setSidebar('open');
     } else {
-      ul.classList.remove("response");
-      setSidebar("closed");
+      ul.classList.remove('response');
+      setSidebar('closed');
     }
   };
 
@@ -38,7 +38,7 @@ const Header = (props) => {
                 type="text"
                 placeholder="Search..."
                 value={props.query}
-                onChange={(event) => props.searchData(event.target.value)}
+                onChange={(event) => history.push(`/${event.target.value}`)}
               />
             </li>
           </ul>
@@ -48,4 +48,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default Search;
